@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Voice Studio — Custom Voice Cloning with a Custom-Built LLM
 
-## Getting Started
+Voice Studio is an experimental application designed to clone and synthesize voices using a custom-built Large Language Model (LLM) pipeline**, enabling generation of natural voice output from text while preserving a target speaker’s characteristics.
 
-First, run the development server:
+This project explores how modern AI systems can combine:
+- **Voice feature extraction**
+- **Speech synthesis**
+- **LLM-based text understanding**
+- And **custom voice adaptation**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> Disclaimer: This project is for research, educational, and experimental purposes. Please use responsibly and only with explicit permission from the voice owner.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-  **Voice Cloning / Speaker Adaptation**
+-  **Text-to-Speech Generation**
+-  **Custom-built LLM integration** for prompt processing, dialogue, and voice consistency
+-  Upload voice samples for reference cloning
+-  Configurable inference settings (e.g., temperature, speed, pitch)
+-  Designed for extension into a full "Voice Studio" product
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+##  How It Works (High-Level)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Voice Sample Input**
+   - You provide a short recording of the target voice.
+2. **Speaker Embedding / Feature Extraction**
+   - The system extracts the speaker’s unique vocal style.
+3. **Custom LLM Processing**
+   - Your text prompt is processed using a custom build of an LLM to improve consistency and control.
+4. **Synthesis**
+   - The synthesized speech is produced to mimic the voice while keeping the text semantics intact.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This repository includes:
+- **Next.js / React** UI (for voice studio interface)
+- **Node.js backend**
+- **Custom LLM service**
+- **Python / FastAPI** services for model inference (depending on setup)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
