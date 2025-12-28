@@ -44,4 +44,8 @@ This repository includes:
 - **Custom LLM service**
 - **Python / FastAPI** services for model inference (depending on setup)
 
+
+![Voice Studio Screenshot](assets/UI.png)
+
+
 ---
